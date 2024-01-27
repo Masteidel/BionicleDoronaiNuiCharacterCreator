@@ -14,7 +14,8 @@ find_package(Qt6 COMPONENTS
 		Widgets
 		REQUIRED)
 
-add_executable(BionicleDoronaiNuiCharacterCreator main.cpp)
+add_executable(BionicleDoronaiNuiCharacterCreator main.cpp
+		include/Character.h)
 target_link_libraries(BionicleDoronaiNuiCharacterCreator
 		Qt::Core
 		Qt::Gui
