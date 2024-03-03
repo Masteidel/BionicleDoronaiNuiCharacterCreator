@@ -6,6 +6,7 @@
 #define BIONICLEDORONAINUICHARACTERCREATOR_CHARACTER_H
 
 #include <string>
+#include <map>
 #include <vector>
 
 using namespace std;
@@ -13,7 +14,7 @@ using namespace std;
 class Character {
 public:
 	string characterName;
-	string gender;
+
 	string temperament;
 	string aspirations;
 	string ideals;
@@ -23,9 +24,11 @@ public:
 
 	// Species species;
 	// Tribe tribe;
+	string gender;
 
 	int level;
 	int hitPoints;
+	int proficiencyBonus;
 	int movementSpeed;
 
 	int strength;
@@ -42,9 +45,18 @@ public:
 	int wisMod;
 	int chaMod;
 
+	int reflexSave;
+	int fortitudeSave;
+	int willSave;
+
 	// vector<Power> powers;
 
 	// TODO: skills
+
+	// Supertype supertype
+	// Archetype archetype
+
+	int widgets;
 };
 
 #endif //BIONICLEDORONAINUICHARACTERCREATOR_CHARACTER_H
